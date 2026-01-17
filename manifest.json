@@ -1,18 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Shipper Ơi! hàng rơi rồi.",
-  "version": "1.0",
-  "description": "Ôi đơn hàng! Nhặt các hộp bị rơi và ném chúng trở lại xe Hupuna. Nhanh tay lên, màn hình của bạn sẽ ngập trong hộp!",
+  "name": "Gecko Mayhem!",
+  "version": "2.0",
+  "description": "A mischievous gecko is defecating all over your screen! Catch and throw them back before your browser crashes.",
   "homepage_url": "https://hupuna.com",
   "action": {
-    "default_icon": "shipCod.png"
+    "default_icon": "icon.png"
   },
   "icons": {
-    "128": "shipCod.png"
+    "128": "icon.png"
   },
   "permissions": [
     "scripting",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "background": {
     "service_worker": "background.js",
@@ -21,8 +22,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "ship.png",
-        "shipCod.png"
+        "shit.gif",
+        "gecko.gif"
       ],
       "matches": [
         "<all_urls>"

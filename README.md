@@ -1,74 +1,79 @@
-# Shipper Ơi! Hàng Rơi Rồi
+# 🦎 Gecko Mayhem!
 
-Một extension Chrome vui nhộn - game tương tác nơi bạn nhặt các hộp carton rơi từ xe giao hàng và ném chúng trở lại!
+A chaotic browser extension game where a messy gecko drops stuff all over your screen!
 
-## Mô Tả
+## 🎮 What is this?
 
-**Shipper Ơi! Hàng Rơi Rồi** là một game mini được tích hợp vào trình duyệt Chrome. Khi bạn click vào icon extension, một chiếc xe giao hàng Hupuna sẽ xuất hiện và chạy qua màn hình, thả các hộp carton xuống. Nhiệm vụ của bạn là:
+**Gecko Mayhem!** is a fun, chaotic browser game that runs right on top of any webpage. A mischievous gecko scurries across your screen, leaving a trail of falling items in its wake. Your job? Catch them and throw them back before your browser gets completely overwhelmed!
 
-- **Nhặt hộp**: Kéo và thả các hộp carton rơi xuống
-- **Ném vào xe**: Ném hộp vào xe giao hàng để giao hàng thành công
-- **Gộp hộp**: Kéo 2 hộp cùng kích thước chồng lên nhau để tạo hộp lớn hơn
-- **Vật lý thực tế**: Hộp có trọng lực, va chạm và nảy tự nhiên
+## ✨ Features
 
-## Cài Đặt
+- **Realistic Physics**: Items fall, bounce, and collide with realistic physics simulation
+- **Interactive Gameplay**: Drag and throw items back at the gecko
+- **Auto-play Mode**: Once enabled, the game runs on every page until you disable it
+- **Persistent State**: Your enable/disable preference is saved across browser sessions
+- **Badge Indicator**: Green "ON" badge shows when the game is active
+- **Non-intrusive**: Doesn't interfere with webpage functionality
 
-1. Tải hoặc clone repository này
-2. Hoặc mở Chrome và vào `chrome://extensions/`
-3. Tìm "Shipper Ơi! Hàng Rơi Rồi" và cài đặt
+## 🚀 How to Play
 
-## Cách Chơi
+1. **Enable the Game**: Click the extension icon to start
+2. **Watch the Chaos**: A gecko will appear and start dropping items
+3. **Clean Up**: Drag items with your mouse and throw them back at the gecko
+4. **Throw Fast**: Build up speed before releasing to score a successful throw
+5. **Disable Anytime**: Click the icon again to stop the madness
 
-1. Click vào icon extension trên thanh công cụ Chrome
-2. Xe giao hàng sẽ xuất hiện và bắt đầu chạy
-3. Khi hộp rơi xuống, dùng chuột để:
-   - **Kéo**: Giữ và kéo hộp đi
-   - **Ném**: Kéo nhanh và thả để ném hộp vào xe
-   - **Gộp**: Kéo 2 hộp cùng kích thước chồng lên nhau
-4. Ném hộp vào xe để giao hàng thành công!
+## 🎯 Tips & Tricks
 
-## Công Nghệ
+- **Throw, Don't Drop**: Moving your mouse quickly before releasing creates a throw
+- **Aim for the Gecko**: Only thrown or dragged items can be caught by the gecko
+- **Speed Matters**: Fast throws are more likely to be successful
+- **Watch the Badge**: Green "ON" badge means the game is running
 
-- **Manifest V3**: Sử dụng Chrome Extension Manifest V3 mới nhất
-- **Vanilla JavaScript**: Không sử dụng framework, code thuần JavaScript
-- **Canvas/HTML5**: Sử dụng DOM và CSS để render game
-- **Service Worker**: Background script chạy dưới dạng service worker
+## 📦 Installation
 
-## 📦 Về Hupuna Group
+### From Source (Developer Mode)
 
-**Công ty Cổ phần Hupuna Group** là đơn vị hàng đầu trong lĩnh vực **sản xuất và in ấn bao bì giấy, hộp carton chất lượng cao** tại Việt Nam.
+1. Download or clone this repository
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable "Developer mode" (top right toggle)
+4. Click "Load unpacked"
+5. Select the extension folder
+6. The Gecko Mayhem icon will appear in your toolbar!
 
-Chúng tôi chuyên cung cấp:  
+## 🔧 Technical Details
 
-- 📦 **Hộp carton 3 lớp, 5 lớp, nắp cài, nắp âm dương**  
+- **Version**: 2.0
+- **Manifest**: V3
+- **Permissions**: `scripting`, `activeTab`, `storage`
+- **Files**: 
+  - `manifest.json` - Extension configuration
+  - `background.js` - State management & auto-injection
+  - `content.js` - Game engine & physics
+  - `gecko.gif` - The chaotic gecko sprite
+  - `shit.gif` - Falling item sprites
 
-- 🎨 **In logo – thiết kế hộp carton theo yêu cầu**  
+## 🎨 Customization
 
-- 🏭 **Giải pháp đóng gói tối ưu cho doanh nghiệp, cửa hàng online và xuất khẩu**
+The game settings are hardcoded but optimized for fun:
+- Gecko speed: 1-3 px/frame
+- Drop rate: 4-8 items per pass
+- Item sizes: 4 levels (24-30px)
+- Physics: Realistic gravity, bounce, and friction
 
-**Hupuna** cam kết mang đến **chất lượng bao bì tốt nhất, giá thành cạnh tranh và dịch vụ hỗ trợ tận tâm** — giúp doanh nghiệp nâng tầm thương hiệu qua từng chi tiết đóng gói.
+## 🐛 Known Issues
+
+- Game doesn't run on `chrome://` or `edge://` pages (browser limitation)
+- Very high item counts may slow down performance on older devices
+
+## 📄 License
+
+Created for fun and chaos! Feel free to modify and share.
+
+## 🌐 Homepage
+
+Visit [https://hupuna.com](https://hupuna.com) for more info!
 
 ---
 
-## 🌐 Thông tin liên hệ
-
-**Công ty Cổ phần Hupuna Group**  
-
-📍 Địa chỉ: 119 Ngõ 83 Phố Vũ Đức Úy, Tân Triều, Thanh Trì, Hà Nội 100000  
-
-🌎 Website: [https://hupuna.com/hop-carton/](https://hupuna.com/hop-carton/)  
-
-📞 Hotline/Zalo: 0889 736 889  
-
-✉️ Email: [Ceohupuna@gmail.com](mailto:Ceohupuna@gmail.com)
-
----
-
-## 🏷️ Hashtags SEO
-
-#HupunaGroup #phukiendonggoi #hopcarton #thungcarton #baobigiay #hopcartontheoyeucau #inlogothuonghieu #baobihupuna
-
----
-
-© 2025 [Hupuna Group](https://hupuna.com) — All rights reserved.
-
+**Enjoy the mayhem! 🦎💨**
